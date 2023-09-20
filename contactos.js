@@ -41,25 +41,17 @@ let contactos = [
     }
 ];
 
-contactos.push(
-    {
-        id: `Angie123`,
+    contactos.splice(1,1,
+        {id: `Angie123`,
         nombre: `Angie`,
         apellido: `Osorio`,
         telefono: 3228017506,
         ubicacion:{
             ciudad: `Quimbaya`,
             direccion: `carrera 5 # 02-22`,
-        }
-    }
-);
+        },}
+        );
 
-contactos = contactos.filter(
-    item=>item.id!==`Alexa0_0`,
-    item=>item.nombre!==`Alexandra`,
-    item=>item.apellido!==`Silva`,
-    item=>item.telefono!==3114685247,
-    item=>item.ubicacion,
-    );
+    
 
 console.log(contactos);
